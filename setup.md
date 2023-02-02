@@ -40,7 +40,9 @@ kubectl -n rook-ceph get pod
 ```
 
 3. Create a Rook Ceph Cluster see: [Rook Docs](https://rook.io/docs/rook/v1.10/Getting-Started/example-configurations/#cluster-crd)
-
+```
+kubectl -n rook-ceph apply -f https://github.com/rook/rook/blob/release-1.10/deploy/examples/cluster.yaml
+```
 4. Verify cluster installation. List all rook pods again: 
 ```shell
 kubectl -n rook-ceph get pod
